@@ -1,0 +1,18 @@
+# ---- taste (read by extract_spotify.py) ----
+playlist_default_weight: 0       # only named playlists speak
+non_electronic_mult: 0.35       # how much score a non-electronic artist keeps
+playlists:                      # exact names, lowercase; big weight = strong signal
+  "my shazam tracks": 2.5       # captured at parties = ground truth
+  "wtnxt?": 1.5
+  # "sleep sounds": 0           # weight 0 excludes a playlist entirely
+
+# ---- radar (read by pipeline.py) ----
+radar_days: 75          # how far ahead to look
+score_min: 3.0          # minimum score to appear on the dashboard radar
+ics_min: 6.0            # minimum score for the personal radar.ics feed
+new_badge_days: 4       # how long an event keeps its NEW badge
+site_title: RAVE RADAR
+timezone: America/New_York
+default_start: "22:00"  # assumed start time when the source has none
+edmtrain_location: 0    # fill in Phase 3; 0 means skip EDMTrain
+metadata_top: 1000      # fetch genre data for the top N artists only

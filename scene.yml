@@ -1,0 +1,149 @@
+# scene.yml · hand-tuned NYC scene map · refreshed 2026-09-03
+# Weights 0-10. Matching contract:
+#   promoters: patterns vs event TITLE, case-insensitive, word-boundary
+#   venues:    patterns vs VENUE field, case-insensitive substring
+#   artists:   fuzzy vs lineups (rapidfuzz); boost only if not already in artists.json
+# PARKED = dormant at 3 with restore condition. Costs nothing while inactive.
+# Short/common names carry anchored patterns only (colon or "presents") to kill substring false positives.
+
+promoters:
+  # Lane 1 · queer/BIPOC art collectives
+  - name: QNCC
+    weight: 10
+    match: ["qncc", "queer nightlife community center"]
+  - name: Papi Juice
+    weight: 6
+    match: ["papi juice"]
+  - name: SHE.THEY.DJ
+    weight: 5
+    match: ["she.they.dj", "she they dj"]
+  - name: Bodyhack
+    weight: 5
+    match: ["bodyhack", "body hack"]
+  - name: Merge # short word: anchored patterns only
+    weight: 5
+    match: ["merge:", "merge into"]
+  - name: Unter # PARKED, was 9. Restore to 9 on first announced date.
+    weight: 3
+    match: ["unter:"]
+  - name: Half Moon # PARKED, was 7. Restore on first sighting.
+    weight: 3
+    match: ["half moon"]
+  - name: Bubble_T # PARKED, was 5. Restore on first sighting.
+    weight: 3
+    match: ["bubble_t", "bubble t"]
+
+  # Lane 2 · techno institutions
+  - name: dweller
+    weight: 8
+    match: ["dweller"]
+  - name: Sustain-Release
+    weight: 8
+    match: ["sustain-release", "sustain release"]
+  - name: The Bunker
+    weight: 7
+    match: ["the bunker", "bunker nonstop"]
+  - name: Teksupport
+    weight: 6
+    match: ["teksupport"]
+  - name: HAUS of ALTR
+    weight: 6
+    match: ["haus of altr"]
+  - name: Mansions
+    weight: 6
+    match: ["mansions"]
+  - name: GENESIS # common word: anchored only
+    weight: 4
+    match: ["genesis:"]
+  - name: Life Of # substring hazard: anchored only
+    weight: 4
+    match: ["life of:", "life of presents"]
+  - name: Techno Brooklyn
+    weight: 4
+    match: ["techno brooklyn"]
+
+  # Lane 3 · renegade/DIY, API-visible
+  - name: Helltekk # promoted from IG-only 2026-09: books RA-listed rooms now
+    weight: 5
+    match: ["helltekk"]
+  - name: Nocturnal Creature Society
+    weight: 4
+    match: ["nocturnal creature society"]
+  - name: "PAN!C ROOM"
+    weight: 4
+    match: ["pan!c room", "panic room"] # "panic room" is loose: weekly triage watches for false hits
+  - name: 909 Worldwide # was 6: IG alive, zero API-visible 2026 events
+    weight: 4
+    match: ["909 worldwide"]
+  - name: Bodybag # PARKED, was 5
+    weight: 3
+    match: ["bodybag"]
+  - name: SLOT # PARKED, was 5; common word: anchored only
+    weight: 3
+    match: ["slot:"]
+
+venues:
+  - name: QNCC
+    weight: 5
+    match: ["qncc", "queer nightlife community center", "100 hinsdale"]
+  - name: Nowadays
+    weight: 5
+    match: ["nowadays"]
+  - name: Bossa Nova Civic Club
+    weight: 5
+    match: ["bossa nova"]
+  - name: Basement
+    weight: 5
+    match: ["basement"]
+  - name: House of Yes
+    weight: 5
+    match: ["house of yes"]
+  - name: Signal
+    weight: 5
+    match: ["signal"]
+  - name: Paragon
+    weight: 5
+    match: ["paragon"]
+  - name: Public Records
+    weight: 4
+    match: ["public records"]
+  - name: Good Room
+    weight: 4
+    match: ["good room"]
+  - name: Refuge
+    weight: 4
+    match: ["refuge"]
+  - name: Gabriela
+    weight: 4
+    match: ["gabriela"]
+  - name: Elsewhere
+    weight: 3
+    match: ["elsewhere"]
+  - name: Knockdown Center
+    weight: 3
+    match: ["knockdown"]
+  - name: Mood Ring
+    weight: 3
+    match: ["mood ring"]
+  # Deliberately unweighted: Pacha New York (Teksupport's promoter weight carries any show there),
+  # XTC Bushwick (weight after first lineups), SILO (opening unconfirmed). Revisit Dec 2026.
+
+artists:
+  - { name: Eli Escobar, weight: 6 }
+  - { name: Aurora Halal, weight: 5 }
+  - { name: Volvox, weight: 5 }
+  - { name: DJ Voices, weight: 5 }
+  - { name: MoMA Ready, weight: 5 }
+  - { name: Ace Mo, weight: 5 }
+  - { name: Shyboi, weight: 5 }
+  - { name: livwutang, weight: 5 }
+  - { name: adobeprincess, weight: 5 }
+  - { name: Madre Guía, weight: 5 }
+  - { name: MANGUMAMI, weight: 5 }
+  - { name: "Preacher's Daughter", weight: 5 }
+  - { name: Anthorp, weight: 4 }
+  - { name: SAINTCLAIR, weight: 4 }
+
+# IG-only, manual lane forever (reference only, no matching):
+#   Chroma Rave, United Jump Front (label active; members surface via PAN!C ROOM).
+#   Route sightings to manual_events.yml.

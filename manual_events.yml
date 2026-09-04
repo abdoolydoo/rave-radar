@@ -1,0 +1,14 @@
+# manual_events.yml · the IG-only lane. He is the sensor.
+# Manual events ALWAYS display on the dashboard, regardless of score.
+# Fields: title, date (YYYY-MM-DD), crew, venue (or "TBA, coords by DM"), url (IG post), note (optional).
+
+events: []
+
+# Shape:
+# events:
+#   - title: "Chroma Rave presents ..."
+#     date: 2026-10-31
+#     crew: "Chroma Rave"
+#     venue: "TBA, coords by DM"
+#     url: "https://instagram.com/p/..."
+#     note: "hard/fast, earplugs"

@@ -1,0 +1,7 @@
+# alias.yml · listing-name → canonical-name (canonical = spelling in artists.json / scene.yml)
+# Populated weekly from unmatched.txt triage. Only add where fuzzy matching genuinely fails.
+# Matching is already case-insensitive: never add pure casing variants.
+
+"fred again": "Fred again.."
+"yune pinku": "yunè pinku"
+"acemoma": "MoMA Ready" # AceMoMA is the MoMA Ready + AceMo duo; v1 alias is 1:1. Revisit if it misleads.

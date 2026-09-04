@@ -1,0 +1,385 @@
+# going.yml · events Abdullah is attending or attended. Feeds GOING badges, going.ics, and the taste loop.
+# Backfilled 2026-09-04 from Gmail receipts (DICE, Resident Advisor, Eventbrite, AXS, Live Nation, Front Gate, TicketSwap, Xceed, Fourvenues, PremiumGuest, KYD Labs, intellitix), 2021-01-01 onward.
+# Fields per event:
+#   title      required
+#   date       required, YYYY-MM-DD, first (or only) day
+#   end_date   optional, YYYY-MM-DD, inclusive last day, multi-day events only
+#   venue      required
+#   promoters  optional, list. Who threw it.
+#   saw        optional, list. Performers whose sets you ACTUALLY CAUGHT, live or DJ.
+#              Prefilled ONLY where the title names a single artist. Strike anything wrong,
+#              add support sets you caught. Multi-DJ bills left empty for your pass.
+#   url        optional
+#   note       optional, free text. "Left early, room was dead" is signal too.
+# A receipt is intent, not attendance: DELETE any night you ended up skipping.
+# Past events stay in this file forever: it doubles as the attendance ledger.
+
+events:
+  # ---- 2022 ----
+  - title: "The Governors Ball Music Festival 2022"
+    date: 2022-06-10
+    end_date: 2022-06-11
+    venue: "Citi Field"
+    promoters: ["Governors Ball"]
+
+  - title: "BENEE World Tour 2022"
+    date: 2022-06-14
+    venue: "House of Blues Boston"
+    saw: ["BENEE"]
+
+  - title: "Electric Zoo 2022"
+    date: 2022-09-03
+    venue: "Randall's Island Park"
+
+  # ---- 2023 ----
+  - title: "BOILER ROOM: NEW YORK CITY | SATURDAY"
+    date: 2023-07-15
+    venue: "The Brooklyn Mirage at Avant Gardner"
+    promoters: ["Boiler Room"]
+    url: "https://dice.fm/event/gk76p-boiler-room-new-york-city-saturday-15th-jul-the-brooklyn-mirage-at-avant-gardner-new-york-tickets"
+    note: "bought 5 months ahead. Last entry 8:00 PM"
+
+  - title: "Tropicana"
+    date: 2023-09-06
+    venue: "Toy Room"
+    promoters: ["Nightlife Madrid"]
+    note: "Madrid. Guest list, free entry"
+
+  - title: "ICON University"
+    date: 2023-09-07
+    venue: "ICON"
+    note: "Madrid. Guest list, free entry"
+
+  - title: "Tropicana"
+    date: 2023-09-13
+    venue: "Toy Room"
+    promoters: ["Unity"]
+    note: "Madrid. Guest list, free entry"
+
+  - title: "Jolgorio"
+    date: 2023-09-15
+    venue: "OPIUM Madrid"
+    url: "https://www.fourvenues.com/opium-madrid/jolgorio-15-09-2023"
+    note: "Madrid. Guest list"
+
+  - title: "Tropicana"
+    date: 2023-09-20
+    venue: "Toy Room"
+    promoters: ["Unity"]
+    note: "Madrid. Guest list, free entry"
+
+  - title: "Jueves Fitz"
+    date: 2023-09-21
+    venue: "Fitz Club"
+    url: "https://www.fourvenues.com/fitz-club/jueves-fitz-21-09-2023"
+    note: "Madrid. Guest list"
+
+  - title: "Miércoles"
+    date: 2023-09-27
+    venue: "Teatro Barceló"
+    url: "https://www.fourvenues.com/teatro-barcelo/miercoles-27-09-20233"
+    note: "Madrid. Guest list"
+
+  - title: "FALSE IDOLS with Sugababes, SHYGIRL, Eliza Rose, Job Jobse b2b Saoirse, Ross From Friends"
+    date: 2023-12-02
+    venue: "DRUMSHEDS"
+    url: "https://ra.co/events/1746739"
+    note: "London. 2 tickets, early entry pre 1pm"
+    saw:
+      [
+        "Sugababes",
+        "SHYGIRL",
+        "Eliza Rose",
+        "Job Jobse",
+        "Saoirse",
+        "Ross From Friends",
+      ]
+
+  - title: "Jueves Fitz"
+    date: 2023-12-14
+    venue: "Fitz Club"
+    url: "https://www.fourvenues.com/fitz-club/jueves-fitz-14-12-2023"
+    note: "Madrid. Guest list"
+
+  - title: "Toy Room Fridays"
+    date: 2023-12-22
+    venue: "Toy Room"
+    promoters: ["Nightlife Madrid"]
+    note: "Madrid. Guest list, 23:59 to 06:00"
+
+  - title: "PRISM pres. ALIGNMENT (Final Release)"
+    date: 2023-12-23
+    venue: "INPUT High Fidelity Dance Club"
+    promoters: ["PRISM"]
+    note: "Barcelona. Bought on TicketSwap from seller Mickaël"
+
+  - title: "Club: Public Possession 10 ans with Sedef Adasi, Bell Towers, DJ City"
+    date: 2023-12-29
+    venue: "Badaboum"
+    promoters: ["Public Possession"]
+    url: "https://ra.co/events/1812977"
+    note: "Paris. Bought same day. 23:30 to 07:00, entry before midnight"
+
+  - title: "Shelter NYE/NYD: LeMaia x Partisan"
+    date: 2023-12-31
+    venue: "Shelter Amsterdam"
+    promoters: ["LeMaia", "Partisan"]
+    url: "https://ra.co/events/1807916"
+    note: "Amsterdam. 23:00 to 06:00"
+
+  # ---- 2024 ----
+  - title: "Friday | Room26"
+    date: 2024-01-12
+    venue: "Room 26"
+    note: "Rome. Xceed guest list, pay at door, lineup undisclosed. 23:30 to 04:30"
+
+  - title: "CHASE & STATUS"
+    date: 2024-03-29
+    venue: "The Great Hall at Avant Gardner"
+    saw: ["CHASE & STATUS"]
+    url: "https://dice.fm/event/68mq8-chase-status-29th-mar-the-great-hall-at-avant-gardner-new-york-tickets"
+    note: "bought from Madrid"
+
+  - title: "Boiler Room: New York | Saturday"
+    date: 2024-07-13
+    venue: "Avant Gardner"
+    promoters: ["Boiler Room"]
+    url: "https://dice.fm/event/o8yoa-boiler-room-new-york-saturday-13th-jul-avant-gardner-new-york-tickets"
+
+  # ---- 2025 ----
+  - title: "Escape: Special Guest, DJ Hyperdrive, Raven, River Moon + Junior M, Neueportrait"
+    date: 2025-03-21
+    venue: "Paragon"
+    promoters: ["Escape"]
+    url: "https://ra.co/events/2093690"
+    note: "3 tickets, entry before 11PM. 21:30 to 03:00"
+
+  - title: "Oktave • Temil"
+    date: 2025-05-31
+    venue: "House of Yes"
+    promoters: ["House of Yes"]
+    url: "https://ra.co/events/2170115"
+    note: "2 tickets across two orders, second bought day-of at second release"
+
+  - title: "Boiler Room: NYC | Friday"
+    date: 2025-07-11
+    venue: "Under the K Bridge"
+    promoters: ["Boiler Room"]
+    note: "moved from Brooklyn Mirage after opening delays"
+
+  - title: "Dissident: Joey Beltram, AMORAL, Carly Zeng b2b Cryptofauna, eros"
+    date: 2025-07-12
+    venue: "Nowadays"
+    promoters: ["Dissident"]
+    url: "https://ra.co/events/2187235"
+    note: "4 RSVPs, entry before midnight. 22:00 to 06:00"
+
+  - title: "Pretty Girl (DJ Set), Slaycey, Sarindipity"
+    date: 2025-08-02
+    venue: "Elsewhere"
+    url: "https://ra.co/events/2168860"
+    note: "4 tickets"
+
+  - title: "Nonstop: Ariel Zetina, Devoye, JASSS, Kenny Larkin, Matas, Nene H"
+    date: 2025-08-09
+    venue: "Nowadays"
+    url: "https://ra.co/events/2210176"
+    note: "4 RSVPs, booked same day"
+
+  - title: "HAPPY HYPE BECK feat. hypebeck, Mesa & Vanessa Damiani"
+    date: 2025-08-28
+    venue: "Le Bain"
+    url: "https://ra.co/events/2243067"
+    note: "RSVP, booked same day"
+
+  - title: "A. G. Cook"
+    date: 2025-08-29
+    venue: "Brooklyn Paramount"
+    saw: ["A. G. Cook"]
+    note: "rescheduled from Jun 6, moved from Brooklyn Mirage"
+
+  # ---- 2026 past ----
+  - title: "FOR YOU X CLUB WORKS"
+    date: 2026-02-20
+    venue: "Le Bain"
+    promoters: ["FOR YOU", "Club Works"]
+    url: "https://ra.co/events/2368627"
+    note: "2 RSVPs"
+
+  - title: "Sounds of Tomorrow feat. Zillion & Loose Goose"
+    date: 2026-02-21
+    venue: "Le Bain"
+    url: "https://ra.co/events/2363876"
+    note: "5 RSVPs across three orders, last one day-of"
+
+  - title: "PARADISCO by Occupy The Disco"
+    date: 2026-03-01
+    venue: "Le Bain"
+    promoters: ["Occupy The Disco"]
+    url: "https://ra.co/events/2377546"
+    note: "5 RSVPs, day party 15:00 to 21:00"
+
+  - title: "Paradiso: Galcher Lustwerk, Black Rave Culture, Honey Bun + BEARCAT"
+    date: 2026-03-07
+    venue: "Paragon"
+    promoters: ["Paradiso"]
+    url: "https://ra.co/events/2366440"
+    note: "bought same night"
+
+  - title: "RUSH: Indira Paganotto, Mha Iri, Katie Rex"
+    date: 2026-03-20
+    venue: "Knockdown Center"
+    promoters: ["RUSH"]
+
+  - title: "Teksupport: CamelPhat (Experience)"
+    date: 2026-04-10
+    venue: "Brooklyn Storehouse"
+    promoters: ["Teksupport"]
+    saw: ["CamelPhat"]
+
+  - title: "Silk // New Forms // Votive // Burial Dance // Alyosha"
+    date: 2026-04-17
+    venue: "Gold Sounds"
+
+  - title: "Oklou"
+    date: 2026-05-02
+    venue: "Terminal 5"
+    saw: ["Ninajirachi"]
+    note: "AXS. 2 tickets across two orders, second a resale bought the day before"
+
+  - title: "Support Women DJs: BABEITSPURR, BRIDGE, elle xxo, Slaycey, Val Fleury"
+    date: 2026-05-07
+    venue: "Nowadays"
+    url: "https://ra.co/events/2407720"
+    note: "bought same day"
+
+  - title: "Teksupport: Nico Moreno, Novah, HHUNTER & Diossa"
+    date: 2026-05-08
+    venue: "Brooklyn Storehouse"
+    promoters: ["Teksupport"]
+
+  - title: "OFFICE HOURS"
+    date: 2026-05-09
+    venue: "Qncc"
+    promoters: ["Office Hours"]
+    url: "https://ra.co/events/2390858"
+    note: "pay what it costs, bought same night"
+
+  - title: "Laylit"
+    date: 2026-05-15
+    venue: "Elsewhere"
+    promoters: ["Laylit"]
+    url: "https://ra.co/events/2402998"
+    note: "2 tickets, bought same day"
+
+  - title: "Z@p, Tal Fussman, Yumi"
+    date: 2026-05-16
+    venue: "Signal"
+    url: "https://ra.co/events/2389985"
+    note: "2 tickets, bought same night"
+
+  - title: "Teksupport: Deborah de Luca"
+    date: 2026-05-30
+    venue: "Stage B"
+    promoters: ["Teksupport"]
+    saw: ["Deborah de Luca"]
+
+  - title: "Tony Humphries' Residency"
+    date: 2026-06-06
+    venue: "Le Bain"
+    saw: ["Tony Humphries"]
+
+  - title: "Life and Death: Maceo Plex (live), DJ Tennis, musclecars, Danny Daze, Andi & Arvin T"
+    date: 2026-06-13
+    venue: "Knockdown Center"
+    promoters: ["Life and Death"]
+
+  - title: "Chris Stussy | Lost, Found & Forgotten"
+    date: 2026-06-27
+    venue: "Brooklyn Army Terminal: Pier 4"
+
+  - title: "Pride 2026: HOY x Glitterbox x Tiki Disco"
+    date: 2026-06-28
+    venue: "Industry City"
+    promoters: ["House of Yes", "Glitterbox", "Tiki Disco"]
+
+  - title: "Office Hours BBQ (Big Business Queenout)"
+    date: 2026-07-03
+    venue: "QNCC"
+    promoters: ["Office Hours"]
+
+  - title: "Retrosex w/ Anyon Elder, NEJ + Drop Dead Gorgeous"
+    date: 2026-07-13
+    venue: "The Broadway"
+    promoters: ["Retrosex"]
+
+  - title: "DJ Pope Birthday Bash"
+    date: 2026-07-16
+    venue: "Somewhere Nowhere NYC"
+
+  - title: "Track Maintenance 10: Tammy Lakkis, Akanbi, Sanjay Nara, Marios"
+    date: 2026-07-25
+    venue: "TBA warehouse, Brooklyn"
+    promoters: ["Track Maintenance"]
+    note: "3 tickets"
+
+  - title: "Teksupport: Colyn (open to close)"
+    date: 2026-08-14
+    venue: "Sunset Park Rooftop"
+    promoters: ["Teksupport"]
+    saw: ["Colyn"]
+
+  - title: "METRIK & GRAFIX U.S. TOUR"
+    date: 2026-08-14
+    venue: "The Brooklyn Monarch"
+    promoters: ["Ultra DNB", "Meadows After Dark"]
+    url: "https://brooklynmonarch.kydlabs.com/e/EV6e2d61a5-5bed-4e71-a948-7071d93edcc0"
+    note: "2 tickets, KYD Labs. Same night as Teksupport: Colyn, so one of these two did not happen"
+
+  - title: "Karachi Community Radio: 9 Years with Bianca Oblivion, Asad Khan, Yas Meen Selectress"
+    date: 2026-08-28
+    venue: "Elsewhere"
+    promoters: ["Karachi Community Radio"]
+    url: "https://ra.co/events/2489073"
+    note: "2 tickets"
+
+  # ---- upcoming ----
+  - title: "Office Hours: Labor Day"
+    date: 2026-09-04
+    venue: "QNCC"
+    promoters: ["Office Hours"]
+    note: "per receipt 10:00-06:00, 2 tickets across two releases"
+
+  - title: "fabric New York: Jeff Mills, Helena Hauff, x3butterly, Shvili + Special Guests TBA"
+    date: 2026-09-05
+    venue: "Under the K Bridge"
+    promoters: ["fabric"]
+    url: "https://ra.co/events/2418732"
+    note: "bought 4.5 months ahead. Overlaps the tail of Office Hours: Labor Day"
+
+  - title: "Teksupport: Four Tet"
+    date: 2026-09-17
+    venue: "Brooklyn Storehouse"
+    promoters: ["Teksupport"]
+    url: "https://dice.fm/event/eoyex6-teksupport-four-tet-17th-sep-brooklyn-storehouse-new-york-city-tickets"
+    note: "2 tickets, one of Storehouse's final months"
+
+  - title: "Pretty Girl [DJ Set]"
+    date: 2026-10-08
+    venue: "Public Records"
+    note: "2 tickets"
+
+  - title: "Overmono"
+    date: 2026-10-09
+    venue: "Terminal 5"
+    saw: ["Overmono"]
+    note: "AXS. 2 tickets, GA Tier 2"
+
+  - title: "City of Gods Festival"
+    date: 2026-10-23
+    venue: "Industry City"
+
+  - title: "Bassvictim"
+    date: 2026-10-31
+    venue: "Knockdown Center"
+    note: "Halloween"
